@@ -1,4 +1,4 @@
-use ig_clone;
+/*                                                  OBJECTIVE QUESTIONS                                           */
 /*1.Are there any tables with duplicate or missing null values? If so, how would you handle them?*/
 /*Checking for NULL Values*/
 
@@ -89,7 +89,7 @@ LEFT JOIN photo_tags pt
     ON p.id = pt.photo_id;
     
 
-/* 4.4.	Identify the top users with the highest engagement rates (likes, comments) on their posts and rank them.  */
+/* 4.	Identify the top users with the highest engagement rates (likes, comments) on their posts and rank them.  */
 
 WITH user_engagement AS (
     SELECT 
@@ -170,7 +170,7 @@ FROM engagement_data
 WHERE total_posts > 0
 ORDER BY avg_engagement_per_post DESC;
 
-/*7. 7.	Calculate the average engagement rate (likes, comments) per post for each user.*/
+/*7.	Calculate the average engagement rate (likes, comments) per post for each user.*/
 
 
 SELECT 
